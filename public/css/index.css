@@ -1,0 +1,25 @@
+.icon-bot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@font-face{
+  font-family: "orbitron";
+  src: url("style/Orbitron-Bold.ttf") format("truetype");
+}
+.title {
+  font-family: Monospace,Sans-Serif;
+  letter-spacing: 2px;
+}
+.msg{
+  max-width: 90%;
+  overflow: hidden;
+}
+.txt {
+  padding: 2px;
+  overflow: scroll;
+  word-wrap: break-word;
+}
+.chatbox{
+  max-height: 580px;
+}
