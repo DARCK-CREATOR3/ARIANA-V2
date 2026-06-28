@@ -7,8 +7,8 @@
     "url": "https://github.com/DARCK-CREATOR3/ARIANA-V2/issues"
   },
   "repository": {
-  "type": "git", 
-  "url": "git+https://github.com/DARCK-CREATOR3/ARIANA-V2.git"
+    "type": "git",
+    "url": "git+https://github.com/DARCK-CREATOR3/ARIANA-V2.git"
   },
   "license": "ISC",
   "author": "",
@@ -18,13 +18,15 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.108.2",
     "cloudinary": "^2.10.0",
     "connect-mongo": "^6.0.0",
     "cors": "^2.8.6",
     "express": "^5.2.1",
     "express-session": "^1.19.0",
     "mongoose": "^9.7.2",
-    "multer": "^2.2.0"
+    "multer": "^2.2.0",
+    "pg": "^8.22.0"
   },
   "devDependencies": {
     "dotenv": "^17.4.2",

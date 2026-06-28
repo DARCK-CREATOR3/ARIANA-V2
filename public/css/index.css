@@ -14,6 +14,7 @@
 .msg{
   max-width: 90%;
   overflow: hidden;
+  transition: all 0.5s ease-in;
 }
 .txt {
   padding: 2px;
@@ -21,5 +22,93 @@
   word-wrap: break-word;
 }
 .chatbox{
-  max-height: 580px;
+  max-height: 550px;
+  min-height: 450px;
+}
+.msg-input{
+  border-radius: 20px 20px;
+  width: 100%;
+  border: 0.5px solid #ddd;
+  letter-spacing: 1px;
+  font-size: 14px;
+  outline: none !important;
+}
+.msg-input:focus{
+  border: 1.5px solid #a8bfec;
+}
+.msg-input::placeholder{
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+.content-input{
+  position: relative;
+}
+.btn {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 4px;
+  top: 22px;
+}
+.text-sq{
+	width: 80px;
+	border-radius: 25px;
+}
+.h-icon{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contain-b{
+  border-right: 0.5px solid #ddd;
+}
+.brder-b {
+  border-bottom: 0.5px solid #ddd;
+}
+.small {
+  font-size: 10px;
+}
+.search-input{
+  width: 100%;
+  height: 33px;
+  border-radius: 5px 5px;
+  letter-spacing: 1px;
+  background: transparent !important;
+  border: 0.5px solid #ddd !important;
+}
+.search {
+  position: relative;
+}
+.icon-search{
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+.chat-text{
+  overflow: hidden;
+}
+.containb{
+  position: absolute;
+  min-height: 680px;
+  background: transparent;
+  backdrop-filter: blur(4px);
+  transition: all 1s linear !important;
+}
+
+
+.hi {
+  background: black;
 }
