@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device=width,initial-scale=1.0">
+       <script src="https://cdn.jsdelivr.net/npm/@tailwindcss"></script>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="style/bootstrap-icons-1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style/flowbite.min.css">
+  <title>ARIANA VOTRE AI</title>
+  </head>
+  <body class="body">
+  	<div id="default-sidebar" class="fixed top-0  z-40 w-64 dark:text-white transition-transform -translate-x-full containb w-80 m-2 overflow-hidden rounded-lg border overflow-x-auto dark:border-gray-500" data-drawer-backdrop="false">
+    <div class="header p-3">
+      <div class="content flex flex-wrap justify-between items-center dark:text-gray-200">
+        <div class="icon flex flex-wrap justify-center items-center gap-1">
+        <div class="icon-bot w-12 h-12 rounded-full border dark:border-gray-500">
+          <i class="bi bi-fire text-3xl"></i>
+        </div>
+        </div>
+        <div class="icon-add">
+          <button onclick="change()" class="icon-bot w-12 h-12 rounded-full border dark:border-gray-500">
+            <i class="bi bi-brightness-high text-2xl"></i>
+          </button>
+        </div>
+      </div>
+      <div class="icon-img">
+        <div class="h-icon border border-gray-400 dark:border-gray-500">
+          <i class="bi bi-person text-4xl"></i>
+        </div>
+      </div>
+    </div>
+    <div class="mx-1">
+      <div class="dark:border-gray-500 info-list rounded-lg border overflow-hidden mb-3">
+        <div class="item p-2 px-2 border-b flex dark:border-gray-500 justify-between items-center gap-2">
+         <div class="item-info flex items-center justify-center gap-1">
+          <i class="bi bi-person"></i>
+           <p class="text-xs dark:text-gray-200">Daniel luzumu</p>
+         </div>
+           <p class="small text-gray-500">Name</p>
+        </div>
+        <div class="item p-2 px-2 flex justify-between items-center gap-2">
+         <div class="item-info flex items-center justify-center">
+          <i class="bi bi-person"></i>
+           <p class="text-xs dark:text-gray-200">danielluzumu2@gmail.com</p>
+         </div>
+           <p class="small text-gray-500">Gmail</p>
+        </div>
+      </div>
+      <div class="dark:border-gray-500 info-list rounded-lg border overflow-hidden mb-5">
+        <div class="dark:border-gray-500 search p-1 border-b">
+         <div class="item-info">
+           <input type="text" class="search-input pl-8 dark:text-white" placeholder="Rechercher une conversation...">
+          <i class="bi bi-search icon-search"></i>
+         </div>
+        </div>
+        <div class="list-search info-list-conv">
+        <div class="item p-2 px-2 flex justify-between items-center dark:border-gray-500 border-b gap-2">
+         <div class="item-info flex items-center justify-center gap-1 chat-text dark:text-gray-400">
+          <i class="bi bi-chat-text"></i>
+           <p class="text-xs overflow-hidden">Danielluzumu2@gmail.cdhdhddhdhhdhdhdhdhdhdhhdhdhdhdhhddhdhhdhdom</p>
+         </div>
+           <p class="small text-gray-500">Chats</p>
+        </div>
+        </div>
+      </div>
+      
+      <div class="info-list rounded-lg border dark:border-gray-500 mb-3">
+        <div class="list-search">
+        <div class="item p-2 px-2 flex justify-between items-center gap-2">
+         <div class="item-info flex items-center justify-center gap-1 chat-text">
+          <i class="bi bi-question-circle"></i>
+           <p class="text-xs dark:text-gray-500 overflow-hidden">Signalé nous d'un probleme ou d'un disfonctionnement exprimez vos besoin ,vos requête ou des recommandations d'amélioration </p>
+         </div>
+        </div>
+        </div>
+        <div class="search p-1">
+         <div class="item-info">
+           <textarea class="msg-input-c dark:border-gray-500" placeholder="...."></textarea>
+         </div>
+           <button type="button" class="btn-admin border dark:border-gray-500 rounded-lg">ENVOYER</button>
+        </div>
+      </div>
+      <footer class="contenir mt-2 mb-2">
+        <div class="footer text-center">
+          <div class="text mb-2 mt-3">
+            <div class="creator text-gray-500 dark:text-gray-500">
+              DARCK-CREATOR
+            </div>
+          </div>
+          <div class="icon-link flex items-center justify-center gap-2">
+            <div class="icon-github bg-gray-200 ico dark:bg-gray-800">
+              <a href="#">
+              <i class="bi bi-github"></i>
+              </a>
+            </div>
+            <div class="bg-gray-200 icon-facebook ico dark:bg-gray-800">
+              <a href="https://www.facebook.com/profile.php?id=61591316737423">
+              <i class="bi bi-facebook"></i>
+              </a>
+          </div>
+          <div class="bg-gray-200 icon-whatsapp dark:bg-gray-800 ico">
+            <a href="#">
+            <i class="bi bi-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    </div>
+    </div>
+ <div class="containeur flex h-screen dark:bg-gray-900">
+  <div class="contain-b dark:border-gray-500 border-r flex-1 flex flex-col bg-white m-2 dark:bg-gray-900 min-w-0">
+    <div class="header dark:text-gray-200 p-2">
+      <div class="content flex flex-wrap justify-between items-center">
+        <div class="icon flex flex-wrap justify-center items-center gap-1">
+          <div class="icon-bot w-12 h-12 rounded-full dark:border-gray-400 border">
+            <i class="bi bi-robot text-3xl"></i>
+          </div>
+          <div class="title-div">
+            <div class="title text-2xl">
+              ARIANA
+            </div>
+          </div>
+        </div>
+        <div class="icon-add md:hidden">
+          <button data-drawer-target="default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button" class="icon-bot w-12 h-12 rounded-full dark:border-gray-400 border">
+            <i class="bi bi-plus text-2xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="chatbox p-1 md:p-4 flex-1 overflow-y-auto">
+      <div class="flex justify-start gap-2 my-2">
+        <i class="bi bi-robot text-2xl text-gray-500 dark:text-gray-400"></i>
+        <div class="msg p-3 rounded-lg bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-200 dark:border-gray-500 border max-w-[80%]">
+          <p class="txt text-sm font-normal break-words">Bonjour Emma, avez-vous bien reçu le sujet du devoir sur les dérivées ?</p>
+          <div class="flex justify-end mt-1">
+            <span class="text-xs text-gray-500 dark:text-gray-400">10:42</span>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-end gap-2 my-2">
+        <div class="msg p-3 rounded-lg bg-gray-100 border dark:bg-gray-800 dark:border-gray-500 max-w-[80%]">
+          <p class="txt dark:text-gray-200 text-sm font-normal break-words">Oui, merci professeur. Je commence à travailler dessus. J'ai une question sur l'exercice 3</p>
+          <div class="flex justify-end mt-1">
+            <span class="text-xs text-gray-400">10:44</span>
+          </div>
+        </div>
+        <i class="bi bi-person-circle text-2xl text-gray-500 dark:text-gray-400"></i>
+      </div>
+      <div class="flex justify-start gap-2 my-2">
+        <i class="bi bi-robot text-2xl text-gray-500 dark:text-gray-400"></i>
+        <div class="text-sq border dark:border-gray-500 p-3">
+          <div class="flex items-center gap-2">
+            <div class="animate-pulse w-3 h-3 rounded-full bg-gray-500 dark:bg-gray-50" style="animation-delay: 0s;"></div>
+            <div class="animate-pulse w-3 h-3 rounded-full bg-gray-500 dark:bg-gray-50" style="animation-delay: 0.4s;"></div>
+            <div class="animate-pulse w-3 h-3 rounded-full bg-gray-500 dark:bg-gray-50" style="animation-delay: 0.8s;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer p-2">
+      <div class="content-input">
+        <textarea placeholder="Envoyer votre question...!" name="message" id="message" class="msg-input focus:ring-0 focus:outline-none dark:bg-gray-900"></textarea>
+        <button type="button" class="btn rounded-full border dark:text-white dark:border-gray-500">
+          <i class="bi bi-arrow-up"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="hidden md:flex md:w-80 lg:w-96 flex-col bg-white dark:bg-gray-900 m-2 rounded-lg overflow-hidden flex-shrink-0">
+    <div class="header p-3 dark:text-gray-200">
+      <div class="content flex flex-wrap justify-between items-center">
+        <div class="icon flex flex-wrap justify-center items-center gap-1">
+          <div class="icon-bot w-12 h-12 rounded-full border dark:border-gray-500">
+            <i class="bi bi-fire text-3xl"></i>
+          </div>
+        </div>
+        <div class="icon-add icon-theme">
+          <button onclick="change()" class="icon-bot w-12 h-12 rounded-full border dark:border-gray-500">
+            <i class="bi bi-brightness-high text-2xl"></i>
+          </button>
+        </div>
+      </div>
+      <div class="icon-img">
+        <div class="h-icon border dark:border-gray-500">
+          <i class="bi bi-person text-4xl"></i>
+        </div>
+      </div>
+    </div>
+    <div class="mx-1 bg-white dark:bg-gray-900 dark:text-gray-200 overflow-y-auto">
+      <div class="info-list rounded-lg border overflow-hidden dark:border-gray-500 mb-3">
+        <div class="item p-2 px-2 border-b flex dark:border-gray-500 justify-between items-center gap-2">
+          <div class="item-info flex items-center justify-center gap-1">
+            <i class="bi bi-person"></i>
+            <p class="text-xs">Daniel luzumu</p>
+          </div>
+          <p class="small text-gray-500">Name</p>
+        </div>
+        <div class="item p-2 px-2 flex justify-between items-center gap-2">
+          <div class="item-info flex items-center justify-center">
+            <i class="bi bi-person"></i>
+            <p class="text-xs">danielluzumu2@gmail.com</p>
+          </div>
+          <p class="small text-gray-500">Gmail</p>
+        </div>
+      </div>
+      <div class="info-list rounded-lg border overflow-hidden mb-8 dark:border-gray-500">
+        <div class="search p-1 border-b dark:border-gray-500">
+          <div class="item-info relative">
+            <input type="text" class="search-input pl-8 dark:text-white w-full" placeholder="Rechercher une conversation...">
+            <i class="bi bi-search icon-search absolute left-2 top-1/2 -translate-y-1/2"></i>
+          </div>
+        </div>
+        <div class="list-search">
+          <div class="item p-2 px-2 flex justify-between items-center gap-2">
+            <div class="item-info flex items-center justify-center gap-1 chat-text flex-1 min-w-0">
+              <i class="bi bi-chat-dots flex-shrink-0"></i>
+              <p class="text-xs overflow-hidden text-ellipsis whitespace-nowrap">Danielluzumu2@gmail.com</p>
+            </div>
+            <p class="small text-gray-500 flex-shrink-0">Chats</p>
+          </div>
+        </div>
+      </div>
+      <div class="info-list rounded-lg border overflow-hidden dark:border-gray-500 mb-6">
+        <div class="list-search">
+          <div class="item p-2 px-2 flex justify-between items-center gap-2">
+            <div class="item-info flex items-center justify-center gap-1 chat-text flex-1 min-w-0">
+              <i class="bi bi-question-circle flex-shrink-0"></i>
+              <p class="text-xs dark:text-gray-500 overflow-hidden text-ellipsis whitespace-nowrap">Signaler un problème ou une suggestion</p>
+            </div>
+          </div>
+        </div>
+        <div class="search p-1">
+          <div class="item-info">
+            <textarea class="msg-input-c dark:border-gray-500 w-full" placeholder="...."></textarea>
+          </div>
+          <button type="button" class="btn-admin border dark:border-gray-500 rounded-lg w-full mt-2">ENVOYER</button>
+        </div>
+      </div>
+      <footer class="contenir mt-2 mb-2">
+        <div class="footer text-center">
+          <div class="text mb-2 mt-3">
+            <div class="creator text-gray-500 dark:text-gray-500">
+              DARCK-CREATOR
+            </div>
+          </div>
+          <div class="icon-link flex items-center justify-center gap-2">
+            <div class="icon-github bg-gray-200 ico dark:bg-gray-800">
+              <a href="#">
+              <i class="bi bi-github"></i>
+              </a>
+            </div>
+            <div class="bg-gray-200 icon-facebook ico dark:bg-gray-800">
+              <a href="https://www.facebook.com/profile.php?id=61591316737423">
+              <i class="bi bi-facebook"></i>
+              </a>
+          </div>
+          <div class="bg-gray-200 icon-whatsapp dark:bg-gray-800 ico">
+            <a href="#">
+            <i class="bi bi-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+</div>
+  	<script src="style/flowbite.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

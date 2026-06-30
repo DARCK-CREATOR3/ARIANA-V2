@@ -36,6 +36,5 @@ let form = document.getElementById("formulaire")
   }
 
 window.addEventListener("DOMContentLoaded", () => {
-  change()
   pwd()
 })
