@@ -34,7 +34,41 @@ let form = document.getElementById("formulaire")
       pP= "password"
     }
   }
-
+  let formulaire = document.getElementById("formulaire")
+  formulaire.addEventListener("submit", async function (e) {
+    e.preventDefault()
+    const formData = new FormData(formulaire)
+    const data = {
+      email: formData.get("email"),
+      password: formData.get("password")
+    }
+    try {
+      const res = await fetch('/login',{
+        method: "POST",
+        headers: {
+          'Content-Type':'application/json'
+        },
+        credentials: 'include',
+        body: JSON.stringify(data)
+      })
+      const result = await res.json()
+      const userId = result.data.id
+      if(res.ok){
+        alert('okk')
+        window.location.href=`chatbot.html?id=${userId}`
+      }
+      else {
+        alert("Une erreur tsss")
+      }
+    }
+    catch (error) {
+      alert("Une erreur serveur")
+    }
+  })
+  
+  
+  
+  
 window.addEventListener("DOMContentLoaded", () => {
   pwd()
 })

@@ -1,9 +1,9 @@
-window.addEventListener("load", function () {
-    document.getElementById("loader").style.display = "none";
+window.addEventListener("load", () => {
+    const loader = document.getElementById("load")
+    loader.style.display = "none";
 });
 
 let couleur = "dark";
-let form = document.getElementById("formulaire");
 function change() {
     const body = document.querySelector(".body");
     if (couleur == "dark") {
@@ -32,10 +32,17 @@ function pwd() {
         pP = "password";
     }
 }
+<<<<<<< HEAD
 let formulaire = document.getElementById("formulaire")
 formulaire.addEventListener("submit",async function (e) {
   e.preventDefault()
   try {
+=======
+let form = document.getElementById("formulaire")
+
+form.addEventListener("submit",async function (e) {
+  e.preventDefault()
+>>>>>>> ea772a4 (hha)
     let formData = new FormData(formulaire)
     const data = {
       name : formData.get('name'),
@@ -46,6 +53,10 @@ formulaire.addEventListener("submit",async function (e) {
   alert("Le mot de passe doit avoir au moins 6 caractères");
   return;
 }
+<<<<<<< HEAD
+=======
+  try {
+>>>>>>> ea772a4 (hha)
     const res = await fetch('/register',{
       method: "POST",
       headers:{
@@ -55,10 +66,18 @@ formulaire.addEventListener("submit",async function (e) {
       body: JSON.stringify(data)
     })
     const result = await res.json()
+<<<<<<< HEAD
     if(res.ok){
       alert(result)
       alert(result,result.user.name)
       window.location.href="chatbot.html"
+=======
+    alert("pas",result.data)
+    const userId = result.data[0].id
+    if(res.ok){
+      alert(result)
+      window.location.href=`chatbot.html?id=${userId}`
+>>>>>>> ea772a4 (hha)
       formulaire.reset()
     }
     else {
