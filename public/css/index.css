@@ -135,11 +135,8 @@
 
 
 .hi {
-<<<<<<< HEAD
   background: black;
-=======
   max-width: 30% !important;
->>>>>>> ea772a4 (hha)
 }
 .btn-admin {
   width: 100%;
@@ -168,8 +165,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-<<<<<<< HEAD
-=======
 }
 .item:hover{
   background: #9b5adf;
@@ -194,4 +189,3 @@
   text-transform: uppercase;
   font-family: Arial,Sans-Serif;
 }
->>>>>>> ea772a4 (hha)
